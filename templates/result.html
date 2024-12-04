@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FD Calculation Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h2>FD Calculation Result</h2>
+        <div class="results">
+            <p><strong>Principal Amount:</strong> ₹{{ principal }}</p>
+            <p><strong>Annual Interest Rate:</strong> {{ interest_rate }}%</p>
+            <p><strong>Tenure:</strong> {{ tenure }} years</p>
+            <p><strong>Compounding Frequency:</strong> {{ frequency }} times per year</p>
+
+            <h3>Results:</h3>
+            <p><strong>Maturity Amount:</strong> ₹{{ maturity_amount|round(2) }}</p>
+            <p><strong>Total Interest Earned:</strong> ₹{{ interest_earned|round(2) }}</p>
+        </div>
+
+        <a href="/">Back to Calculator</a>
+    </div>
+</body>
+
+</html>
