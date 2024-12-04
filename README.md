@@ -1,1 +1,1 @@
-this is a simple web based fd calculator creted using flask python
+this is a simple web based fd calculator created using flask python
